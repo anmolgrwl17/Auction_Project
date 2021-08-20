@@ -1,5 +1,4 @@
 import React from 'react';
-import '../../RApps.css';
 
 export default function Comp1() {
   return (
