@@ -7,7 +7,7 @@ import Services from './components/pages/Services';
 import Products from './components/pages/Products';
 import SignUp from './components/pages/SignUp';
 // Rishabh Try
-import Comp1 from './components/pages/Component_1';
+import Testing from './components/pages/Testing';
 
 function App() {
   return (
@@ -19,7 +19,7 @@ function App() {
           <Route path='/services' component={Services} />
           <Route path='/products' component={Products} />
           <Route path='/sign-up' component={SignUp} />
-          <Route path='/comp1' component={Comp1} />
+          <Route path='/Testing' component={Testing} />
         </Switch>
       </Router>
     </>
