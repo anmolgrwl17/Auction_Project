@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Comp1() {
+export default function Testing() {
   return (
     <div>
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
