@@ -1,5 +1,52 @@
+/* DropDown starts here */
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 10rem;
+  padding: .5rem 0;
+  margin: .125rem 0 0;
+  font-size: .875rem;
+  color: #262626;
+  text-align: left;
+  list-style: none;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid rgba(0,0,0,.15);
+  border-radius: .25rem;
+}
+
+.dropdown-menu.show
+{
+  position: absolute; 
+  will-change: transform; 
+  top: 0px; 
+  left: 0px; 
+  transform: translate3d(8px, 37px, 0px);
+}
+
+.core{
+    -webkit-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-flex-grow: 1;
+    flex-grow: 1;
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+}
+
+.filter-set .dropdown.transmission-options, .filter-set .dropdown.year-widget{
+  -webkit-flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+
+/* DropDown ends here */
+
 .cards {
-    padding: 4rem;
+    /* padding: 4rem; */
     background: #fff;
   }
   
@@ -55,12 +102,12 @@
     animation-name: fade-img;
     animation-duration: 2s;
   }
-  
-  .cards__item__pic-wrap::after {
+   /* Blue Bar under the image
+  /* .cards__item__pic-wrap::after {
     content: attr(data-category);
     position: absolute;
     bottom: 0;
-    /* margin-left: 10px; */
+    /* margin-left: 10px; 
     padding: 6px 8px;
     width: 100%;
     font-size: 12px;
@@ -68,22 +115,50 @@
     color: #fff;
     background-color: #1f98f4;
     box-sizing: border-box;
+  } */
+
+.bid-bar-mini{
+    bottom: 8px;
+    left: 8px;
+    display: flex;
   }
 
-    /* .cards__item__pic-wrap::after {
-    content: attr(data-category);
+  .bid-bar{
+    /* display: flex; */
     position: absolute;
-    bottom: 0;
-    margin-left: 10px;
-    padding: 6px 8px;
-    max-width: calc((100%) - 60px);
-    font-size: 12px;
-    font-weight: 700;
+    bottom: 48px;
+    left: 8px;
+    background: #262626;
+    border-radius: 8px;
+    position: relative;
     color: #fff;
-    background-color: #1f98f4;
-    box-sizing: border-box;
-  } */
-  
+    font-style: normal;
+    font-weight: 400;
+    white-space: nowrap;
+    align-items: center;
+  }
+
+  .bar-bg{
+    position: absolute;
+    margin: 0;
+    border-radius: 2px;
+  }
+
+  .bar-stats{
+    position: absolute;
+    padding: 4px 8px;
+    height: 25px;
+    -webkit-justify-content: flex-start; 
+    justify-content: flex-start;
+  }
+
+  .bid-stats {
+    padding: 8px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+  }
+
   .cards__item__img {
     position: absolute;
     top: 0;
@@ -119,6 +194,33 @@
   }
 
   .cards__item__city {
+    color: #828282;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+  }
+
+  .cards__item__tag {
+    color: #fff;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 19px;
+    padding: 0 4px;
+    border-radius: 4px;
+    align-items: center;
+    display: flex;
+    text-transform: uppercase;
+    font-weight: 700;
+    background-color: #5ca1ff;
+  }
+
+  .cards__item__tag__none {
+    display: none;
+  }
+
+  .cards__item__cityAndTag {
+    display: flex;
+    justify-content: space-between;
     color: #828282;
     font-size: 16px;
     font-weight: 500;
