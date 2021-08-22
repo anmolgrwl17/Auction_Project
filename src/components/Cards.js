@@ -6,6 +6,20 @@ function Cards() {
   return (
     <div className='cards'>
       <h1>Popular Cars</h1>
+
+      <div className="filter-set">
+        <div className="core">
+          <div className="transmission-options  dropdown">
+            <button type="button" aria-haspopup="true" aria-expanded="false" className="dropdown-toggle btn btn-secondary"><span>Transmission</span></button>
+            <div tabindex="-1" role="menu" aria-hidden="true" className="dropdown-menu">
+              <button type="button" tabindex="0" role="menuitem" className="dropdown-item">All</button>
+              <button type="button" data-filter="1" tabindex="0" role="menuitem" className="btn btn-link  dropdown-item">Automatic</button>
+              <button type="button" data-filter="2" tabindex="0" role="menuitem" className="btn btn-link  dropdown-item">Manual</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div className='cards__container'>
         <div className='cards__wrapper'>
           <ul className='cards__items'>
@@ -13,8 +27,11 @@ function Cards() {
               src='images/BMW_M4.jpg'
               head= '2017 BMW M4 Coupe'
               text='6-Speed Manual, Texas-Kept, Unmodified'
+              tag='No Reserve'
               city = 'Lucknow, UP'
-              label='No Reserve'
+              label= 'Bid Price'
+              timeLeft= ' 1 Day '
+              bidPrice= ' 17,00,000'
               path='/services'
             />
             <CardItem
@@ -28,6 +45,7 @@ function Cards() {
               src='images/BMW_M6.jpg'
               head= '2014 BMW M6 Gran Coupe'
               text='560-hp Turbo V8, No Major Modifications, Mostly California-Kept'
+              tag='No Reserve'
               city = 'Lucknow, UP'
               label='Luxury'
               path='/services'
