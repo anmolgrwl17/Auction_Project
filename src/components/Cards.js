@@ -5,18 +5,28 @@ import CardItem from './CardItem';
 function Cards() {
   return (
     <div className='cards'>
-      <h1>Popular Cars</h1>
 
-      <div className="filter-set">
-        <div className="core">
-          <div className="transmission-options  dropdown">
-            <button type="button" aria-haspopup="true" aria-expanded="false" className="dropdown-toggle btn btn-secondary"><span>Transmission</span></button>
-            <div tabindex="-1" role="menu" aria-hidden="true" className="dropdown-menu">
-              <button type="button" tabindex="0" role="menuitem" className="dropdown-item">All</button>
-              <button type="button" data-filter="1" tabindex="0" role="menuitem" className="btn btn-link  dropdown-item">Automatic</button>
-              <button type="button" data-filter="2" tabindex="0" role="menuitem" className="btn btn-link  dropdown-item">Manual</button>
-            </div>
-          </div>
+      
+      <div className="dropdown">
+        <span>Transmission</span>
+        <div class="dropdown-content">
+          <li><a href="https://www.google.com" tabindex="0" role="menuitem" className="dropdown-item">All</a></li>
+          <li><a href="https://www.google.com" data-filter="1" tabindex="0" role="menuitem" className="btn btn-link  dropdown-item">Automatic</a></li>
+          <li><a href="https://www.google.com" data-filter="2" tabindex="0" role="menuitem" className="btn btn-link  dropdown-item">Manual</a></li>
+        </div>
+      </div>
+
+
+      <div className="dropdown">
+        <span>Body Style</span>
+        <div className="dropdown-content">
+          <li><a href="https://www.google.com" tabindex="0" role="menuitem" className="dropdown-item">All</a></li>
+          <li><a href="https://www.google.com" data-filter="1" tabindex="0" role="menuitem" className="btn btn-link  dropdown-item">Coupe</a></li>
+          <li><a href="https://www.google.com" data-filter="2" tabindex="0" role="menuitem" className="btn btn-link  dropdown-item">Convertible</a></li>
+          <li><a href="https://www.google.com" data-filter="2" tabindex="0" role="menuitem" className="btn btn-link  dropdown-item">Hatchback</a></li>
+          <li><a href="https://www.google.com" data-filter="2" tabindex="0" role="menuitem" className="btn btn-link  dropdown-item">Sedan</a></li>
+          <li><a href="https://www.google.com" data-filter="2" tabindex="0" role="menuitem" className="btn btn-link  dropdown-item">SUV/Crossover</a></li>
+          <li><a href="https://www.google.com" data-filter="2" tabindex="0" role="menuitem" className="btn btn-link  dropdown-item">Truck</a></li>
         </div>
       </div>
 

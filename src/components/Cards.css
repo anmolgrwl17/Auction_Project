@@ -1,52 +1,49 @@
 /* DropDown starts here */
 
-.dropdown-menu {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  z-index: 1000;
+.filter1 {
+  padding-left: 8px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  border: 1px solid #e5e5e5;
+  border-radius: 6px;
+  color: #555;
+  padding: 12px;
+}
+
+.dropdown-content {
   display: none;
-  float: left;
-  min-width: 10rem;
-  padding: .5rem 0;
-  margin: .125rem 0 0;
-  font-size: .875rem;
-  color: #262626;
-  text-align: left;
-  list-style: none;
-  background-color: #fff;
-  background-clip: padding-box;
-  border: 1px solid rgba(0,0,0,.15);
-  border-radius: .25rem;
+  margin-top: 15px;
+  left: 0;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 87px;
+  box-shadow: 0 8px 40px rgb(0 0 0 / 16%);
+  padding: 12px 12px;
+  z-index: 1;
+  border: 0;
+  border-radius: 8px;
+  list-style:none;
+  }
+  
+  a:link {
+  text-decoration: none;
+  }
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
-.dropdown-menu.show
-{
-  position: absolute; 
-  will-change: transform; 
-  top: 0px; 
-  left: 0px; 
-  transform: translate3d(8px, 37px, 0px);
-}
-
-.core{
-    -webkit-flex-wrap: nowrap;
-    flex-wrap: nowrap;
-    -webkit-flex-grow: 1;
-    flex-grow: 1;
-    -webkit-align-items: flex-start;
-    align-items: flex-start;
-}
-
-.filter-set .dropdown.transmission-options, .filter-set .dropdown.year-widget{
-  -webkit-flex: 1 1 auto;
-  flex: 1 1 auto;
+.dropdown-content a:hover{
+  border-radius: 6px;
 }
 
 /* DropDown ends here */
 
 .cards {
-    /* padding: 4rem; */
+    padding: 1rem;
     background: #fff;
   }
   
