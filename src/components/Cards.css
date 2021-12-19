@@ -1,4 +1,84 @@
+.top-bar{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.dropdown-left{
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.sort-right{
+  display: flex;
+  align-items: center;
+}
+
+.dropdown-left::-webkit-scrollbar{
+  display: none;
+}
+
+.filter-sorts-wrapper{
+    display: flex;
+    white-space: nowrap;
+    
+    /* -webkit-align-items: flex-start; */
+    align-items: flex-start;
+    /* -webkit-flex-wrap: nowrap; */
+    /* flex-wrap: nowrap; */
+    overflow-x: hidden;
+    overflow: auto;
+    /* overflow-y: hidden; */
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+}
+.filter-sorts-wrapper::-webkit-scrollbar{
+  display: none;
+}
+.select-ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.select-ul .li-item{
+  float: left;
+  margin: 0 5px;
+}
+.select-ul .li-item a{
+  text-decoration:none;
+  color: black;
+}
+.select-ul .li-item:hover{
+  border-bottom: 2px solid black;
+}
+
 /* DropDown starts here */
+
+.filter-set .form-control{
+  padding: 0 20px 0 8px;
+    height: 34px;
+    font-size: 14px;
+    border-color: #e5e5e5;
+    line-height: 34px;
+    -webkit-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    width: 68px;
+}
+
+.form-group{
+  border: none;
+}
+
+.year-style{
+  padding: 5px;
+  border-radius: 5px;
+}
+.year-options{
+  display: flex;
+  align-items: center;
+}
 
 .filter1 {
   padding-left: 8px;
@@ -36,8 +116,16 @@
   display: block;
 }
 
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
 .dropdown-content a:hover{
   border-radius: 6px;
+  background-color: #ddd;
 }
 
 /* DropDown ends here */
@@ -62,7 +150,7 @@
   
   .cards__wrapper {
     position: relative;
-    margin: 50px 0 45px;
+    margin: 40px 0 45px;
   }
   
   .cards__items {
@@ -100,7 +188,7 @@
     animation-duration: 2s;
   }
    /* Blue Bar under the image
-  /* .cards__item__pic-wrap::after {
+  .cards__item__pic-wrap::after {
     content: attr(data-category);
     position: absolute;
     bottom: 0;
@@ -240,4 +328,19 @@
     .cards__item {
       margin-bottom: 2rem;
     }
+  }
+
+  @media only screen and (max-width: 900px) {
+  .top-bar{
+    display: grid;
+    grid-row-gap: 10px;
+  }
+  .sort-right{
+    overflow: auto;
+  }
+
+  .dropdown-left{
+    overflow: auto;
+    direction: rtl;
+  }
   }
