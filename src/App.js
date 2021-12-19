@@ -6,7 +6,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Services from './components/pages/Services';
 import Products from './components/pages/Products';
 import SignUp from './components/pages/SignUp';
-// Rishabh Try
+import CarPage from './components/pages/CarPage';
 import Testing from './components/pages/Testing';
 
 function App() {
@@ -19,6 +19,7 @@ function App() {
           <Route path='/services' component={Services} />
           <Route path='/products' component={Products} />
           <Route path='/sign-up' component={SignUp} />
+          <Route path='/CarPage' component={CarPage} />
           <Route path='/Testing' component={Testing} />
         </Switch>
       </Router>
