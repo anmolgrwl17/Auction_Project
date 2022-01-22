@@ -202,6 +202,16 @@
     box-sizing: border-box;
   } */
 
+  .far{
+    font-size: 14px;
+  }
+
+  .fa-rupee-sign{
+    font-size: 14px;
+    font-family: "Font Awesome 5 Free",'Montserrat';
+    font-weight: 600;
+  }
+
 .bid-bar-mini{
     bottom: 8px;
     left: 8px;
@@ -219,6 +229,7 @@
     color: #fff;
     font-style: normal;
     font-weight: 400;
+    font-size: 14px;
     white-space: nowrap;
     align-items: center;
   }
@@ -269,18 +280,18 @@
   
   .cards__item__head {
     color: #252e48;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 24px;
   }
 
   .cards__item__text {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 24px;
   }
 
   .cards__item__city {
     color: #828282;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 500;
     line-height: 19px;
   }
@@ -307,7 +318,7 @@
     display: flex;
     justify-content: space-between;
     color: #828282;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 500;
     line-height: 24px;
   }

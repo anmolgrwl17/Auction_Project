@@ -125,7 +125,7 @@ function Cards() {
               city = 'Lucknow, UP'
               label= 'Bid Price'
               timeLeft= ' 1 Day '
-              bidPrice= ' 17,00,000'
+              bidPrice= ' ₹ 17,00,000'
               path='/CarPage'
             />
             <CardItem
