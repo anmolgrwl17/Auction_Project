@@ -180,7 +180,7 @@
     padding: 0 14px;
     margin: 6px 0;
     border: none;
-    border-radius: 20px;
+    border-radius: 8px;
     line-height: 36px;
   }
   
@@ -210,7 +210,7 @@
 }
   
   .dropdown-nav-content a:hover { 
-    border-radius: 6px;
+    border-radius: 8px;
     background-color: #ddd;
   }
   
