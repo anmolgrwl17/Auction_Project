@@ -1,76 +1,291 @@
-import React from 'react'
-import './CarPage.css';
-
+import React from "react";
+import "./CarPage.css";
 
 function CarPage() {
-    return (
-        <>
-        <div className='carPage'>
-            <div className='auction-title'>
-                <h1>2017 BMW M4 Coupe</h1>
-                <button class="toggle-watch  "><span class="sr-only">Watch</span></button>
-            </div>
-            <div className='carDescription'>
-                <p>6-Speed Manual, Texas-Kept, Unmodified</p>
-                <button aria-hidden="true" type="button" class="btn rb btn-share d-none d-md-block">Share</button>
-            </div>
-            
-            <div className='row auction-photos'></div>
-            <div className='col for-hero'></div>
-            <div className='gallery-preview'></div>
+  return (
+    <>
+      <div className="carPage">
+        <div className="auction-title">
+          <h1>2017 BMW M4 Coupe</h1>
+          <button class="toggle-watch">
+            <span class="sr-only">Watch</span>
+          </button>
+        </div>
+        <div className="carDescription">
+          <p>6-Speed Manual, Texas-Kept, Unmodified</p>
+          <button
+            aria-hidden="true"
+            type="button"
+            class="btn rb btn-share d-none d-md-block">
+            Share
+          </button>
+        </div>
 
-            <div class="detail-section detail-highlights">
-                <div className= 'barCarPage'>
-                    <div className='bidBarCarPage'>
-                        <div className="bid-stats">
-                        <div><i class="far fa-clock"> :</i><strong>20 minutes</strong></div>
-                        <div>&nbsp;<i class="fas fa-arrow-up"></i> &nbsp;High Bid : <i class="fas fa-rupee-sign"> 17,00,000</i></div>
-                        <div>&nbsp;&nbsp;<i class="fas fa-hashtag"></i> Bids : 24</div>
-                        <div>&nbsp;<i class="far fa-comments"></i>&nbsp;Comments : 20</div>
-                    </div>
-                    </div>
-                <button className="placeBidBtn">Place Bid</button>
+        <div className="row auction-photos"></div>
+        <div className="col for-hero"></div>
+        <div className="gallery-preview"></div>
+
+        <div class="detail-section detail-highlights">
+          <div className="barCarPage">
+            <div className="bidBarCarPage">
+              <div className="bid-stats">
+                <div>
+                  <i class="far fa-clock"> :</i>
+                  <strong>20 minutes</strong>
+                </div>
+                <div>
+                  &nbsp;<i class="fas fa-arrow-up"></i> &nbsp;High Bid :{" "}
+                  <i class="fas fa-rupee-sign"> 17,00,000</i>
+                </div>
+                <div>
+                  &nbsp;&nbsp;<i class="fas fa-hashtag"></i> Bids : 24
+                </div>
+                <div>
+                  &nbsp;<i class="far fa-comments"></i>&nbsp;Comments : 20
+                </div>
+              </div>
             </div>
+            <button className="placeBidBtn">Place Bid</button>
+          </div>
 
-            <h4>Highlights</h4>
-            <div class="detail-body">
-                <p>THIS... is a 2021 Tesla Model S Long Range, finished in black with a black interior. </p>
-                <ul>
-                    <li>The odometer currently indicates less than 25 miles. </li>
-                    <li>The attached Carfax history report indicates no damage or accidents.</li>
-                    <li>An included window sticker shows this Model S carried a sticker price of $97,690 and came equipped with 19-inch Tempest wheels, adaptive suspension damping, a panoramic glass roof, leatherette upholstery, a yoke steering wheel, heated and cooled front seats, 3-zone climate control system, a 22-speaker audio system, autopilot, and more as detailed below. </li>
-                    <li>This Model S Long Range has an EPA-estimated driving range of 405 miles. </li>
-                    <li>A 2016 refresh for the Model S saw the front end design updated along with the air filtration system, an improved charger with higher amps, LED headlights and fog lights, body-colored side sill plates, a black-colored rear diffuser, and a revised front trunk area.</li>
-                    <li>Power comes from a pair of electric motors (one per axle) and a lithium-ion battery pack, rated at approximately 670 total horsepower.</li>
-                    </ul>
-                    </div>
-                    </div>
+          <h4>Highlights</h4>
+          <div class="detail-body">
+            <p>
+              THIS.. is a 2021 Tesla Model S Long Range, finished in black with
+              a black interior.
+            </p>
+            <ul>
+              <li>The odometer currently indicates less than 25 miles. </li>
+              <li>
+                The attached Carfax history report indicates no damage or
+                accidents.
+              </li>
+              <li>
+                An included window sticker shows this Model S carried a sticker
+                price of $97,690 and came equipped with 19-inch Tempest wheels,
+                adaptive suspension damping, a panoramic glass roof, leatherette
+                upholstery, a yoke steering wheel, heated and cooled front
+                seats, 3-zone climate control system, a 22-speaker audio system,
+                autopilot, and more as detailed below.{" "}
+              </li>
+              <li>
+                This Model S Long Range has an EPA-estimated driving range of
+                405 miles.
+              </li>
+              <li>
+                A 2016 refresh for the Model S saw the front end design updated
+                along with the air filtration system, an improved charger with
+                higher amps, LED headlights and fog lights, body-colored side
+                sill plates, a black-colored rear diffuser, and a revised front
+                trunk area.
+              </li>
+              <li>
+                Power comes from a pair of electric motors (one per axle) and a
+                lithium-ion battery pack, rated at approximately 670 total
+                horsepower.
+              </li>
+            </ul>
+          </div>
+        </div>
 
-                    <div class="detail-section detail-equipment">
-                        <h4>Equipment</h4><div class="detail-body">
-                            <p>A window sticker is provided in the photo gallery, and a partial list of notable equipment is shown below:</p>
-                            <ul>
-                                <li>19-inch Tempest wheels</li>
-                                <li>Adaptive suspension damping</li>
-                                <li>Panoramic glass roof</li>
-                                <li>Leatherette upholstery</li>
-                                <li>Wood interior trim</li>
-                                <li>Heated yoke steering wheel</li>
-                                <li>Heated and cooled front seats</li>
-                                <li>Heated rear seats</li>
-                                <li>17-inch touchscreen </li>
-                                <li>3-zone climate control system</li>
-                                <li>Onboard maps and navigation</li>
-                                <li>22-speaker audio system</li>
-                                <li>Autopilot</li>
-                                </ul>
-                                </div>
-                                </div>
-                                <div class="detail-section detail-other_items"><h4>Other Items Included in Sale</h4><div class="detail-body"><ul><li>2 key fobs, 2 key cards</li><li>Owner's manual and supplements</li><li>Charging cable</li></ul></div></div>
-                                <div class="detail-section detail-ownership_history"><h4>Ownership History</h4><div class="detail-body"><p>The selling dealer purchased this car new in December 2021.</p></div></div>
-                                </div>
-                    </>
-);
+        <div class="detail-section detail-equipment">
+          <h4>Equipment</h4>
+          <div class="detail-body">
+            <p>
+              A window sticker is provided in the photo gallery, and a partial
+              list of notable equipment is shown below:
+            </p>
+            <ul>
+              <li>19-inch Tempest wheels</li>
+              <li>Adaptive suspension damping</li>
+              <li>Panoramic glass roof</li>
+              <li>Leatherette upholstery</li>
+              <li>Wood interior trim</li>
+              <li>Heated yoke steering wheel</li>
+              <li>Heated and cooled front seats</li>
+              <li>Heated rear seats</li>
+              <li>17-inch touchscreen </li>
+              <li>3-zone climate control system</li>
+              <li>Onboard maps and navigation</li>
+              <li>22-speaker audio system</li>
+              <li>Autopilot</li>
+            </ul>
+          </div>
+        </div>
+        <div class="detail-section detail-other_items">
+          <h4>Other Items Included in Sale</h4>
+          <div class="detail-body">
+            <ul>
+              <li>2 key fobs, 2 key cards</li>
+              <li>Owner's manual and supplements</li>
+              <li>Charging cable</li>
+            </ul>
+          </div>
+        </div>
+        <div class="detail-section detail-ownership_history">
+          <h4>Ownership History</h4>
+          <div class="detail-body">
+            <p>The selling dealer purchased this car new in December 2021.</p>
+          </div>
+        </div>
+        <div class="detail-section detail-videos">
+          <h4>Video</h4>
+          <div class="videos">
+            <iframe
+              width="400"
+              height="225"
+              src="https://www.youtube.com/embed/BHHtunIY434"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+            <iframe
+              width="400"
+              height="225"
+              src="https://www.youtube.com/embed/BHHtunIY434"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+            <iframe
+              width="400"
+              height="225"
+              src="https://www.youtube.com/embed/BHHtunIY434"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+        <div class="detail-section sellerQAHeading">
+          <h3>
+            Seller Q&amp;A <span class="q-count">(3)</span>
+          </h3>
+          <div class="qaButton">
+            <button class="btn btn-link ask-question">Ask a question</button>
+            <button class="btn btn-link ml-auto view-all">View all</button>
+          </div>
+        </div>
+        {/* Comment Section */}
+
+        <div className="questions">
+        <button class="prev" disabled=""><span class="sr-only">Prev</span></button>
+        </div>
+
+        <div id="auction-jump" class="auction-subheading ">
+          <h2>
+            2016 Nissan GT-R Premium ·{" "}
+            <span title="Reserve auctions have a hidden minimum price and will be sold only if that price is met or exceeded.">
+              Reserve
+            </span>
+          </h2>
+        </div>
+
+        <div class="detail-section auction-stats-meta ">
+          <div class="d-flex flex-column flex-md-row">
+            <div class="current-bid d-flex flex-column flex-shrink-1 ">
+              <div class="d-flex bidder">
+                <h4>Current Bid</h4>
+                <div class="username">
+                  <div class="photo float-left">
+                    <a
+                      title="Weiserheiser"
+                      class="usericon"
+                      href="/user/Weiserheiser"
+                    >
+                      <img
+                        src="https://media.carsandbids.com/cdn-cgi/image/width=60,height=60,quality=70/431f9228a74c40c1fbdff9c6b9e2a838dbb559b8/photos/3oOnEQdv-S85HJbujfgQ.jpg"
+                        alt="Weiserheiser"
+                      />
+                    </a>
+                  </div>
+                  <div class="text">
+                    <a
+                      title="Weiserheiser"
+                      class="user"
+                      href="/user/Weiserheiser"
+                    >
+                      Weiserheiser
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="bid-value">
+                <span>₹</span>17,00,567
+              </div>
+              <p class="financing-cta">
+                As low as <strong>$989 per month</strong>*
+                <button type="button" class="btn btn-link rb">
+                  See Rates
+                </button>
+              </p>
+            </div>
+            <ul class="stats">
+              <li>
+                <div class="th">Seller</div>
+                <div class="td">
+                  <div class="username">
+                    <div class="photo float-left">
+                      <a title="AZ911" class="usericon" href="/user/AZ911"><img src="https://media.carsandbids.com/cdn-cgi/image/width=60,height=60,quality=70/c63218fbb9e0207c258104213b635f9d6fda7aca/photos/RDyhfTI_f.jpg" alt="AZ911"/></a>
+                    </div>
+                    <div class="text">
+                      <a title="AZ911" class="user" href="/user/AZ911">AZ911</a>
+                      <span class="user-extra">
+                        <button title="Contact seller" class="btn btn-link">
+                          Contact
+                        </button>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="th">Ending</div>
+                <div class="td end-icon">Tue, Jan 25 12:00am IST</div>
+              </li>
+
+              <li>
+                <div class="th">Bids</div>
+                <div class="td bid-icon">21</div>
+              </li>
+              <li>
+                <div class="th">Views</div>
+                <div class="td views-icon">8,348</div>
+              </li>
+            </ul>
+          </div>
+          <div class="auction-stats-actions d-none d-md-flex">
+            <button title="Place bid" class="btn btn-light btn-lg btnPlaceBid dropbtn">
+              Place Bid
+            </button>
+            <div class="sub-actions">
+              <button
+                title="How buying works"
+                class="btn btn-icon btn-hw"
+                target="_blank"
+                href="/what-is/?section=how-it-works"
+              >
+                Guide to Buy
+              </button>
+              <button title="Watch this auction" class="btn btn-icon btn-w ">
+                Watch this auction
+              </button>
+              <button
+                type="button"
+                title="Notify me"
+                class="btn btn-icon btn-n rb subscribe">
+                Notify me
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
+  );
 }
 export default CarPage;
 
