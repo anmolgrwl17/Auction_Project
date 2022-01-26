@@ -5,6 +5,7 @@ function CarPage() {
   return (
     <>
       <div className="carPage">
+        <div className="page60">
         <div className="auction-title">
           <h1>2017 BMW M4 Coupe</h1>
           <button class="toggle-watch">
@@ -16,7 +17,8 @@ function CarPage() {
           <button
             aria-hidden="true"
             type="button"
-            class="btn rb btn-share d-none d-md-block">
+            class="btn rb btn-share d-none d-md-block"
+          >
             Share
           </button>
         </div>
@@ -46,6 +48,69 @@ function CarPage() {
               </div>
             </div>
             <button className="placeBidBtn">Place Bid</button>
+          </div>
+
+          <div className="quick-facts">
+            <dl>
+              <dt>Make</dt>
+              <dd>
+                <a href="/search/bmw">BMW</a>
+              </dd>
+              <dt>Model</dt>
+              <dd className="subscribeable">
+                <a href="#">530i</a><i class="far fa-star"></i>
+                <button
+                  type="button"
+                  title="Notify me of 530is"
+                  className=" rb subscribe"
+                >
+                  <span className="sr-only">Save</span>
+                </button>
+              </dd>
+              <dt>Seller</dt>
+              <dd className="seller">
+                <div className="username">
+                  <div className="photo float-left">
+                    <a title="" alt="Guchon"></a>
+                  </div>
+                  <div className="text">
+                    <a title="Guchon" className="user" href="/user/Guchon">
+                      Guchon
+                    </a>
+                  </div>
+                </div>
+                <button
+                  title="Contact seller"
+                  className="btn btn-link btn-contact"
+                >
+                  Contact
+                </button>
+              </dd>
+              <dt>Location</dt>
+              <dd>Salt Lake City, UT 84115</dd>
+              <dt>VIN</dt>
+              <dd>WBADT63433CK30075</dd>
+              <dt>Mileage</dt>
+              <dd>41,600</dd>
+              <dt>Body Style</dt>
+              <dd>Sedan</dd>
+            </dl>
+            <dl>
+              <dt>Engine</dt>
+              <dd>3.0L I6</dd>
+              <dt>Drivetrain</dt>
+              <dd>Rear-wheel drive</dd>
+              <dt>Transmission</dt>
+              <dd>Automatic (5-Speed)</dd>
+              <dt>Exterior Color</dt>
+              <dd>Black</dd>
+              <dt>Interior Color</dt>
+              <dd>Black</dd>
+              <dt>Title Status</dt>
+              <dd>Clean (CA)</dd>
+              <dt>Seller Type</dt>
+              <dd>Dealer</dd>
+            </dl>
           </div>
 
           <h4>Highlights</h4>
@@ -160,7 +225,7 @@ function CarPage() {
             ></iframe>
           </div>
         </div>
-        <div class="detail-section sellerQAHeading">
+        <div class="sellerQAHeading">
           <h3>
             Seller Q&amp;A <span class="q-count">(3)</span>
           </h3>
@@ -172,10 +237,144 @@ function CarPage() {
         {/* Comment Section */}
 
         <div className="questions">
-        <button class="prev" disabled=""><span class="sr-only">Prev</span></button>
+          {/* <button class="prev" disabled="">
+            <i class="fas fa-angle-left"></i>
+          </button> */}
+          <div class="qaCards" id="qcontainer-cards">
+            <ul>
+              <li data-id="9WkbAQlQ" class="qanda unanswered  ">
+                <div class="question">
+                  <div class="username">
+                    <div class="photo float-left">
+                      <a title="Freemarket" class="usericon" href="#"></a>
+                    </div>
+                    <div class="text">
+                      <a
+                        title="Freemarket"
+                        class="user"
+                        href="/user/Freemarket"
+                      >
+                        Freemarket
+                      </a>
+                      <i class="fas fa-user-check"></i>
+                      <i class="fas fa-star-of-life"></i>
+                      <span class="rep">
+                        <i class="fas fa-arrow-up"></i>
+                        43
+                      </span>
+                    </div>
+                  </div>
+                  <div class="content">
+                    <div class="text">
+                      <p>
+                        <strong>Q: </strong>Is full self driving already
+                        purchased on this car?
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="interact">
+                  <button class="btn btn-sm btn-outline-secondary btn-upvote ">
+                    <i class="fas fa-arrow-up"></i>0
+                  </button>
+                  <p class="unanswered">Not yet answered</p>
+                </div>
+              </li>
+              <li data-id="9eAv2VAq" class="qanda answered  ">
+                <div class="question">
+                  <div class="username">
+                    <div class="photo float-left">
+                      <a
+                        title="ColoradoHyperion"
+                        class="usericon"
+                        href="/user/ColoradoHyperion"
+                      >
+                        IMG
+                      </a>
+                    </div>
+                    <div class="text">
+                      <a
+                        title="ColoradoHyperion"
+                        class="user"
+                        href="/user/ColoradoHyperion"
+                      >
+                        ColoradoHyperion
+                      </a>
+                      <i class="fas fa-user-check"></i>
+                      <span class="rep">
+                        <i class="far fa-thumbs-up"></i>
+                        101
+                      </span>
+                      <span class="bidder">Bidder</span>
+                    </div>
+                  </div>
+                  <div class="content">
+                    <div class="text">
+                      <p>
+                        <strong>Q: </strong>Apologies, I may have missed it, but
+                        what are the details of Factory Warranty that comes with
+                        this Model S?
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="answer">
+                  <div class="username">
+                    <div class="photo float-left">
+                      <a
+                        title="Specialtyauto"
+                        class="usericon"
+                        href="/user/Specialtyauto"
+                      >
+                        IMG
+                      </a>
+                    </div>
+                    <div class="text">
+                      <a
+                        title="Specialtyauto"
+                        class="user"
+                        href="/user/Specialtyauto"
+                      >
+                        Specialtyauto
+                      </a>
+                      <span class="rep">
+                        <i class="fas fa-user-check"></i>
+                        85
+                      </span>
+                      <span class="seller">Seller</span>
+                    </div>
+                  </div>
+                  <div class="content">
+                    <div class="text">
+                      <p>
+                        <strong>A: </strong>Hello it comes with the full factory
+                        warranty of 4 yr/50,000 mi basic, 8 yr/unlimited mi
+                        powertrain
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="interact">
+                  <button class="btn btn-sm btn-outline-secondary btn-upvote ">
+                    <i class="fas fa-arrow-up"></i>0
+                  </button>
+                  <button class="btn btn-link ml-auto rb">View answer</button>
+                </div>
+              </li>
+              <li class="qanda empty-question">
+                <button class="btn btn-secondary btn-lg">Ask a question</button>
+              </li>
+              <li class="qanda empty-question">
+                <button class="btn btn-secondary btn-lg">Ask a question</button>
+              </li>
+            </ul>
+            {/* <button class="next">
+              <i class="fas fa-angle-right"></i>
+            </button> */}
+          </div>
         </div>
 
-        <div id="auction-jump" class="auction-subheading ">
+        <div id="auction-jump" className="auction-subheading ">
           <h2>
             2016 Nissan GT-R Premium ·{" "}
             <span title="Reserve auctions have a hidden minimum price and will be sold only if that price is met or exceeded.">
@@ -223,18 +422,25 @@ function CarPage() {
                 </button>
               </p>
             </div>
-            <ul class="stats">
+            <ul className="stats">
               <li>
-                <div class="th">Seller</div>
-                <div class="td">
-                  <div class="username">
-                    <div class="photo float-left">
-                      <a title="AZ911" class="usericon" href="/user/AZ911"><img src="https://media.carsandbids.com/cdn-cgi/image/width=60,height=60,quality=70/c63218fbb9e0207c258104213b635f9d6fda7aca/photos/RDyhfTI_f.jpg" alt="AZ911"/></a>
+                <div className="th">Seller</div>
+                <div className="td">
+                  <div className="username">
+                    <div className="photo float-left">
+                      <a title="AZ911" className="usericon" href="/user/AZ911">
+                        <img
+                          src="https://media.carsandbids.com/cdn-cgi/image/width=60,height=60,quality=70/c63218fbb9e0207c258104213b635f9d6fda7aca/photos/RDyhfTI_f.jpg"
+                          alt="AZ911"
+                        />
+                      </a>
                     </div>
-                    <div class="text">
-                      <a title="AZ911" class="user" href="/user/AZ911">AZ911</a>
-                      <span class="user-extra">
-                        <button title="Contact seller" class="btn btn-link">
+                    <div className="text">
+                      <a title="AZ911" className="user" href="/user/AZ911">
+                        AZ911
+                      </a>
+                      <span className="user-extra">
+                        <button title="Contact seller" className="btn btn-link">
                           Contact
                         </button>
                       </span>
@@ -258,8 +464,12 @@ function CarPage() {
               </li>
             </ul>
           </div>
+
           <div class="auction-stats-actions d-none d-md-flex">
-            <button title="Place bid" class="btn btn-light btn-lg btnPlaceBid dropbtn">
+            <button
+              title="Place bid"
+              class="btn btn-light btn-lg btnPlaceBid dropbtn"
+            >
               Place Bid
             </button>
             <div class="sub-actions">
@@ -277,12 +487,14 @@ function CarPage() {
               <button
                 type="button"
                 title="Notify me"
-                class="btn btn-icon btn-n rb subscribe">
+                class="btn btn-icon btn-n rb subscribe"
+              >
                 Notify me
               </button>
             </div>
           </div>
         </div>
+      </div>
       </div>
     </>
   );
