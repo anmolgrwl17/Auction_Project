@@ -3,7 +3,7 @@
 }
 
 .page60{
-width: 60vw;
+/* width: 60vw; */
 }
 .auction-title {
   display: flex;
@@ -340,7 +340,7 @@ li {
 .btnPlaceBid{
 width: 100%;
 }
-
+/* 
 .prev {
   padding: 0;
   top: 0;
@@ -350,23 +350,25 @@ width: 100%;
   -webkit-appearance: none;
   appearance: none;
   width: 43px;
-  /* position: absolute; */
   display: block;
   background: 0 0;
 }
 
+.qaLi{
+  width: 600px;
+}
+
 li.qanda{
   margin-right: 16px;
-  padding: 17px 14px 0 16px;
   border: 1px solid #e3e3e3;
   border-radius: 6px;
   float: left;
-  overflow: hidden;
   padding: 17px 20px 0 16px;
   width: 350px;
   height: 250px;
   overflow: auto;
-}
+  position: relative;
+} */
 
 .empty-question {
   padding-top: 0;
@@ -401,18 +403,41 @@ li.qanda{
   align-items: flex-start;
 }
 
-.qaCards{
+/* .qaCards{
   overflow: auto;
   position: relative;
 }
-
+.qasub {
+  display: flex;
+  flex-wrap: no-wrap;
+  overflow-x: auto;
+  margin: 20px;
+}
 .qaCards>ul {
-  /* position: absolute; */
   top: 0;
   left: 0;
   transition: left .2s ease-out;
   display: flex;
-  min-width: 100%;
+  min-width: 150%;
+  margin-bottom: 23px;
+} */
+
+.qaLi {
+  width: 350px;
+  height: 250px;
+  margin-left: 10px;
+  display: inline-block;
+  border-radius: 6px;
+  border: 1px solid #e3e3e3; 
+  overflow-y: auto;
+}
+
+.qaUl { 
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  width: 60vw;
+  padding-bottom: 20px;
   margin-bottom: 23px;
 }
 

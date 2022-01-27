@@ -1,5 +1,6 @@
 import React from "react";
 import "./CarPage.css";
+import Card from 'react-bootstrap/Card';
 
 function CarPage() {
   return (
@@ -241,8 +242,8 @@ function CarPage() {
             <i class="fas fa-angle-left"></i>
           </button> */}
           <div class="qaCards" id="qcontainer-cards">
-            <ul>
-              <li data-id="9WkbAQlQ" class="qanda unanswered  ">
+            <ul class="qaUl">
+              <li data-id="9WkbAQlQ" class="qanda unanswered qaLi">
                 <div class="question">
                   <div class="username">
                     <div class="photo float-left">
@@ -264,14 +265,16 @@ function CarPage() {
                       </span>
                     </div>
                   </div>
+                  <Card>
                   <div class="content">
                     <div class="text">
-                      <p>
+                      <Card.Text>
                         <strong>Q: </strong>Is full self driving already
                         purchased on this car?
-                      </p>
+                        </Card.Text>
                     </div>
                   </div>
+                  </Card>
                 </div>
                 <div class="interact">
                   <button class="btn btn-sm btn-outline-secondary btn-upvote ">
@@ -280,7 +283,7 @@ function CarPage() {
                   <p class="unanswered">Not yet answered</p>
                 </div>
               </li>
-              <li data-id="9eAv2VAq" class="qanda answered  ">
+              <li data-id="9eAv2VAq" class="qanda answered qaLi">
                 <div class="question">
                   <div class="username">
                     <div class="photo float-left">
@@ -361,18 +364,63 @@ function CarPage() {
                   <button class="btn btn-link ml-auto rb">View answer</button>
                 </div>
               </li>
-              <li class="qanda empty-question">
+              <li class="qanda empty-question qaLi">
                 <button class="btn btn-secondary btn-lg">Ask a question</button>
               </li>
-              <li class="qanda empty-question">
+              <li class="qanda empty-question qaLi">
                 <button class="btn btn-secondary btn-lg">Ask a question</button>
               </li>
+              <li class="qanda empty-question qaLi">
+                <button class="btn btn-secondary btn-lg">Ask a question</button>
+              </li>
+              <li class="qanda empty-question qaLi">
+                <button class="btn btn-secondary btn-lg">Ask a question</button>
+              </li>
+              <li class="qanda empty-question qaLi">
+                <button class="btn btn-secondary btn-lg">Ask a question</button>
+              </li>
+
+              <li class="qanda empty-question qaLi">
+                <button class="btn btn-secondary btn-lg">Ask a question</button>
+              </li>
+              <li class="qanda empty-question qaLi">
+                <button class="btn btn-secondary btn-lg">Ask a question</button>
+              </li>
+              <li class="qanda empty-question qaLi">
+                <button class="btn btn-secondary btn-lg">Ask a question</button>
+              </li>
+              <li class="qanda empty-question qaLi">
+                <button class="btn btn-secondary btn-lg">Ask a question</button>
+              </li>
+              <li class="qanda empty-question qaLi">
+                <button class="btn btn-secondary btn-lg">Ask a question</button>
+              </li>
+              <li class="qanda empty-question qaLi">
+                <button class="btn btn-secondary btn-lg">Ask a question</button>
+              </li>
+              <li class="qanda empty-question qaLi">
+                <button class="btn btn-secondary btn-lg">Ask a question</button>
+              </li>
+              
             </ul>
             {/* <button class="next">
               <i class="fas fa-angle-right"></i>
             </button> */}
           </div>
         </div>
+
+        <Card style={{ width: '18rem' }}>
+  <Card.Body>
+    <Card.Title>Card Title</Card.Title>
+    <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>
+    <Card.Text>
+      Some quick example text to build on the card title and make up the bulk of
+      the card's content.
+    </Card.Text>
+    <Card.Link href="#">Card Link</Card.Link>
+    <Card.Link href="#">Another Link</Card.Link>
+  </Card.Body>
+</Card>
 
         <div id="auction-jump" className="auction-subheading ">
           <h2>
