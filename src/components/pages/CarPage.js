@@ -265,16 +265,14 @@ function CarPage() {
                       </span>
                     </div>
                   </div>
-                  <Card>
                   <div class="content">
                     <div class="text">
-                      <Card.Text>
+                      <p>
                         <strong>Q: </strong>Is full self driving already
                         purchased on this car?
-                        </Card.Text>
+                        </p>
                     </div>
                   </div>
-                  </Card>
                 </div>
                 <div class="interact">
                   <button class="btn btn-sm btn-outline-secondary btn-upvote ">
@@ -367,40 +365,6 @@ function CarPage() {
               <li class="qanda empty-question qaLi">
                 <button class="btn btn-secondary btn-lg">Ask a question</button>
               </li>
-              <li class="qanda empty-question qaLi">
-                <button class="btn btn-secondary btn-lg">Ask a question</button>
-              </li>
-              <li class="qanda empty-question qaLi">
-                <button class="btn btn-secondary btn-lg">Ask a question</button>
-              </li>
-              <li class="qanda empty-question qaLi">
-                <button class="btn btn-secondary btn-lg">Ask a question</button>
-              </li>
-              <li class="qanda empty-question qaLi">
-                <button class="btn btn-secondary btn-lg">Ask a question</button>
-              </li>
-
-              <li class="qanda empty-question qaLi">
-                <button class="btn btn-secondary btn-lg">Ask a question</button>
-              </li>
-              <li class="qanda empty-question qaLi">
-                <button class="btn btn-secondary btn-lg">Ask a question</button>
-              </li>
-              <li class="qanda empty-question qaLi">
-                <button class="btn btn-secondary btn-lg">Ask a question</button>
-              </li>
-              <li class="qanda empty-question qaLi">
-                <button class="btn btn-secondary btn-lg">Ask a question</button>
-              </li>
-              <li class="qanda empty-question qaLi">
-                <button class="btn btn-secondary btn-lg">Ask a question</button>
-              </li>
-              <li class="qanda empty-question qaLi">
-                <button class="btn btn-secondary btn-lg">Ask a question</button>
-              </li>
-              <li class="qanda empty-question qaLi">
-                <button class="btn btn-secondary btn-lg">Ask a question</button>
-              </li>
               
             </ul>
             {/* <button class="next">
@@ -408,19 +372,6 @@ function CarPage() {
             </button> */}
           </div>
         </div>
-
-        <Card style={{ width: '18rem' }}>
-  <Card.Body>
-    <Card.Title>Card Title</Card.Title>
-    <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>
-    <Card.Text>
-      Some quick example text to build on the card title and make up the bulk of
-      the card's content.
-    </Card.Text>
-    <Card.Link href="#">Card Link</Card.Link>
-    <Card.Link href="#">Another Link</Card.Link>
-  </Card.Body>
-</Card>
 
         <div id="auction-jump" className="auction-subheading ">
           <h2>
