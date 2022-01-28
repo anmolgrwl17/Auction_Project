@@ -3,7 +3,7 @@
 }
 
 .page60{
-/* width: 60vw; */
+width: 60vw;
 }
 .auction-title {
   display: flex;
@@ -375,15 +375,16 @@ li.qanda{
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
 .text {
   min-height: 54px;
-  margin-bottom: 16px;
+  white-space: pre-wrap;
 }
 
 .content {
-  padding-left: 40px;
+  padding: 20px;
   font-size: 15px;
   line-height: 18px;
   word-break: break-word;
@@ -391,11 +392,9 @@ li.qanda{
 
 .interact {
   padding-top: 12px;
-  padding-left: 40px;
+  padding-left: 20px;
   padding-right: 10px;
-  margin-right: -10px;
   min-height: 56px;
-  background: #fff;
   bottom: 0;
   left: 16px;
   right: 24px;
