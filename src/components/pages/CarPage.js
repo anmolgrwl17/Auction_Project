@@ -362,8 +362,8 @@ function CarPage() {
                   <button class="btn btn-link ml-auto rb">View answer</button>
                 </div>
               </li>
-              <li class="qanda empty-question qaLi">
-                <button class="btn btn-secondary btn-lg">Ask a question</button>
+              <li class="qaLi">
+                  <button id="empty-question" class="btn btn-secondary btn-lg">Ask a question</button>
               </li>
               
             </ul>

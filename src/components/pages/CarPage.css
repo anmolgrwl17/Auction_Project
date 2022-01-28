@@ -370,14 +370,15 @@ li.qanda{
   position: relative;
 } */
 
-.empty-question {
-  padding-top: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
 
+ 
+#empty-question {
+  margin: auto;
+  width:50%;
+  position:relative;
+  top:50%;
+  left:25%;
+}
 .text {
   min-height: 54px;
   white-space: pre-wrap;
@@ -430,6 +431,7 @@ li.qanda{
   border: 1px solid #e3e3e3; 
   overflow-y: auto;
 }
+
 
 .qaUl { 
   overflow-x: scroll;
