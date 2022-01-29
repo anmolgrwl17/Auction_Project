@@ -371,11 +371,17 @@ li.qanda{
 } */
 
 .empty-question {
-  padding-top: 0;
+  /* padding-top: 0;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
   text-align: center;
+}
+
+#empty-question {
+  margin: auto;
+  position:relative;
+  top:45%;
 }
 
 .text {
@@ -445,4 +451,22 @@ li.qanda{
     order: 1;
     margin-bottom: 12px;
   }
+}
+
+@media (max-width: 600px) {
+  .d-flex{
+    display: grid !important;
+  }
+  .page60{
+    width: 100%;
+    }
+    .videos{
+      grid-template-columns: 1fr;
+    }
+    .bid-stats{
+      justify-content: space-around;
+    }
+    .detail-section{
+      width: 100%;
+    }
 }
