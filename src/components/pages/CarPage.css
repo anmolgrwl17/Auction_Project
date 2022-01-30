@@ -496,7 +496,7 @@ li.qanda{
 .main {
   margin-right: 4px;
   flex-grow: 1;
-  max-width: 60vw;
+  min-width: 60vw;
   border-radius: 0;
   cursor: pointer;
 }
