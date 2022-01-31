@@ -3,6 +3,7 @@ import "./CarPage.css";
 import { Gallery, Item } from "react-photoswipe-gallery";
 import "photoswipe/dist/photoswipe.css";
 import "photoswipe/dist/default-skin/default-skin.css";
+import Footer from "../Footer";
 
 function CarPage() {
   return (
@@ -137,7 +138,7 @@ function CarPage() {
                     <i class="fas fa-rupee-sign"> 17,00,000</i>
                   </div>
                   <div>
-                    &nbsp;&nbsp;<i class="fas fa-hashtag"></i> Bids : 24
+                    &nbsp;&nbsp;<i class="fas fa-hashtag"/> Bids : 24
                   </div>
                   <div>
                     &nbsp;<i class="far fa-comments"></i>&nbsp;Comments : 20
@@ -546,16 +547,16 @@ function CarPage() {
 
                 <li>
                   <div class="th">Ending</div>
-                  <div class="td end-icon">Tue, Jan 25 12:00am IST</div>
+                  <div class="td end-icon"><i class="far fa-calendar-check"/> Tue, Jan 25 12:00am IST</div>
                 </li>
 
                 <li>
                   <div class="th">Bids</div>
-                  <div class="td bid-icon">21</div>
+                  <div class="td bid-icon"><i class="fas fa-hashtag"/> 21</div>
                 </li>
                 <li>
                   <div class="th">Views</div>
-                  <div class="td views-icon">8,348</div>
+                  <div class="td views-icon"><i class="far fa-eye"/> 8,348</div>
                 </li>
               </ul>
             </div>
@@ -591,36 +592,8 @@ function CarPage() {
           </div>
         </div>
       </div>
+      <Footer/>
     </>
   );
 }
 export default CarPage;
-
-/* <div className="quick-facts">
-    <dl>
-        <dt>Make</dt><dd><a href="/search/mclaren">McLaren</a></dd>
-        <dt>Model</dt><dd class="subscribeable"><a href="/search/mclaren/600lt">600LT</a>
-        <button type="button" title="Notify me of 600LTs" class=" rb subscribe"><span class="sr-only">Save</span></button></dd>
-            <dt>Seller</dt><dd>
-                <div class="username">
-            <div class="photo float-left"><a class="usericon" href="/user/BarrettAutomotiveGroup">
-                <img src="https://media.carsandbids.com/cdn-cgi/image/width=60,height=60,quality=70/14c4604d9ac6fb6345918128f71b7e74aa81aa3b/photos/9uh5z_jJE.png" alt="BarrettAutomotiveGroup"></a></div>
-                <div class="text"><a class="user" href="/user/BarrettAutomotiveGroup">BarrettAutomotiveGroup</a>
-                </div>
-                </div>
-        </dd>
-        <dt>Location</dt><dd>Moorpark, CA 93021</dd>
-        <dt>VIN</dt><dd>SBM13RAA0KW008355</dd>
-        <dt>Mileage</dt><dd>6,900</dd>
-        <dt>Body Style</dt><dd>Coupe</dd>
-        </dl>
-        <dl>
-            <dt>Engine</dt><dd>3.8L Turbocharged V8</dd>
-        <dt>Drivetrain</dt><dd>Rear-wheel drive</dd>
-        <dt>Transmission</dt><dd>Automatic (7-Speed)</dd>
-        <dt>Exterior Color</dt><dd>Ceramic Gray</dd>
-        <dt>Interior Color</dt><dd>Carbon Black/Burnt Orange</dd>
-        <dt>Title Status</dt><dd>Clean (CA)</dd>
-        <dt>Seller Type</dt><dd>Private Party</dd>
-        </dl>
-        </div> */
