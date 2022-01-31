@@ -1,5 +1,5 @@
 .carPage {
-  margin: 40px 40px;
+  margin: 20px 40px;
 }
 
 .page60{
@@ -223,7 +223,7 @@ h4 {
   margin-bottom: 0;
   font-weight: 700;
   font-size: 15px;
-  line-height: 30px;
+  line-height: 60px;
   white-space: nowrap;
 }
 
@@ -284,8 +284,9 @@ ul.stats {
   display: table;
 }
 
-li {
+.stats > li {
   display: table-row;
+  line-height: 28px;
 }
 
 .th{
