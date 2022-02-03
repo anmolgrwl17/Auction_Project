@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component }  from 'react';
 import Navbar from './components/Navbar';
 import './App.css';
 import Home from './components/pages/Home';
@@ -8,8 +8,10 @@ import Products from './components/pages/Products';
 import SignUp from './components/pages/SignUp';
 import CarPage from './components/pages/CarPage';
 import Testing from './components/pages/Testing';
+import homeTest from './components/pages/homeTest';
 
-function App() {
+class App extends Component {
+  render(){
   return (
     <>
       <Router>
@@ -21,10 +23,12 @@ function App() {
           <Route path='/sign-up' component={SignUp} />
           <Route path='/CarPage' component={CarPage} />
           <Route path='/Testing' component={Testing} />
+          <Route path='/homeTest' component={homeTest} />
         </Switch>
       </Router>
     </>
   );
+  }
 }
 
 export default App;
