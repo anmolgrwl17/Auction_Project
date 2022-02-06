@@ -7,7 +7,7 @@ class homeTest extends Component {
     }
 
     callAPI() {
-        fetch("http://localhost:7000/testAPI")
+        fetch("http://localhost:7000/api/auction")
         .then(res => res.text())
         .then(res => this.setState({ apiResponse: res }));
     }
@@ -24,3 +24,5 @@ render() {
 }
 
 export default homeTest;
+
+//hello
