@@ -9,6 +9,7 @@ import SignUp from './components/pages/SignUp';
 import CarPage from './components/pages/CarPage';
 import Testing from './components/pages/Testing';
 import homeTest from './components/pages/homeTest';
+import Auctions from './components/pages/Auctions';
 
 class App extends Component {
   render(){
@@ -24,6 +25,7 @@ class App extends Component {
           <Route path='/CarPage' component={CarPage} />
           <Route path='/Testing' component={Testing} />
           <Route path='/homeTest' component={homeTest} />
+          <Route path='/Auctions' component={Auctions}/>
         </Switch>
       </Router>
     </>
